@@ -1,6 +1,6 @@
-# Copyright Kitware Developers. See COPYRIGHT file for details.
+# Copyright Kitware, Inc. See COPYRIGHT file for details.
 #
-# SPDX-License-Identifier: (BSD-3-Clause)
+# SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
 from spack_repo.builtin.build_systems.cmake import CMakePackage
 from spack_repo.builtin.build_systems.cuda import CudaPackage

@@ -1,0 +1,11 @@
+[project]
+name = "kwai-packages"
+description = "Spack packages for Kitware AI projects"
+requires-python = ">=3.8"
+# dependencies = ["spack-packages[builtin]"]
+dynamic = ["version"]
+
+[tool.black]
+line-length = 99
+include = "(repos/spack_repo|tests)/.*\\.pyi?$"
+skip_magic_trailing_comma = true
