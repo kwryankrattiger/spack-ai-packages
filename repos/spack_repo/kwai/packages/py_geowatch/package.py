@@ -252,7 +252,7 @@ class PyGeowatch(PythonPackage):
     #   albumentations==1.0.0  # pinned for invariants model
 
     #   ndsampler>=0.8.0
-    #   progiter>=2.0.0
+    depends_on("pogiter@2.0.0:")
     #   fire>=0.4.0
     #   tempenv>=0.2.0
     #   scriptconfig>=0.8.2
