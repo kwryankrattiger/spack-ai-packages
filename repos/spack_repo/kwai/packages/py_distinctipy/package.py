@@ -18,7 +18,8 @@ class PyDistinctipy(PythonPackage):
     """
 
     homepage = "https://distinctipy.readthedocs.io/"
-    url = "https://github.com/alan-turing-institute/distinctipy"
+    git = "https://github.com/alan-turing-institute/distinctipy"
+    pypi = "distinctipy/distinctipy-1.3.4.tar.gz"
 
     maintainers("kwryankrattiger")
 

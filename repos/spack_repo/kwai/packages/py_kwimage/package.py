@@ -51,12 +51,12 @@ class PyKwimage(PythonPackage):
     depends_on("py-pillow@9.1.0:", when="^python@3.10")
     depends_on("py-pillow@8.0.0:", when="^python@:3.9")
 
-    depends_on("py-scikit-image@0.25.1:", when="^python3.13:")
-    depends_on("py-scikit-image@0.22.0:", when="^python3.12")
-    depends_on("py-scikit-image@0.20.0:", when="^python3.11")
-    depends_on("py-scikit-image@0.19.0:", when="^python3.10")
-    depends_on("py-scikit-image@0.18.0:", when="^python3.9")
-    depends_on("py-scikit-image@0.17.2:", when="^python3.8")
+    depends_on("py-scikit-image@0.25.1:", when="^python@3.13:")
+    depends_on("py-scikit-image@0.22.0:", when="^python@3.12")
+    depends_on("py-scikit-image@0.20.0:", when="^python@3.11")
+    depends_on("py-scikit-image@0.19.0:", when="^python@3.10")
+    depends_on("py-scikit-image@0.18.0:", when="^python@3.9")
+    depends_on("py-scikit-image@0.17.2:", when="^python@3.8")
 
     depends_on("py-networkx@3.0:", when="^python@3.13:")
     depends_on("py-networkx@2.8:", when="^python@3.11:3.12")

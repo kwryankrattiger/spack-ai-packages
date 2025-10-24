@@ -7,6 +7,7 @@ from spack_repo.builtin.build_systems.cuda import CudaPackage
 
 from spack.package import (
     depends_on,
+    license,
     maintainers,
     version,
     variant

@@ -18,13 +18,14 @@ class PyKwarray(PythonPackage):
     """
 
     homepage = "https://kwarray.readthedocs.io"
-    url = "https://github.com/Kitware/kwarray"
+    git = "https://github.com/Kitware/kwarray"
+    pypi = "kwarray/kwarray-0.7.1.tar.gz"
 
     maintainers("kwryankrattiger")
 
     license("Apache-2.0", checked_by="kwryankrattiger")
 
-    version("0.7.1", md5="")
+    version("0.7.1", md5="109be1584c02ad339ae7a80c7666e9a7")
 
     depends_on("py-ubelt@1.2.3:")
 

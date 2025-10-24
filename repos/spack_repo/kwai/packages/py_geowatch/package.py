@@ -6,6 +6,7 @@ from spack_repo.builtin.build_systems.python import PythonPackage
 
 from spack.package import (
     depends_on,
+    license,
     conflicts,
     maintainers,
     version,
@@ -75,8 +76,8 @@ class PyGeowatch(PythonPackage):
 
     depends_on("py-fiona@1.10.0:", when="^python@3.13:")
     depends_on("py-fiona@1.9.5:", when="^python@3.12")
-    depends_on("py-fiona@1.8.22:<1.9.0", when="^python@3.11")
-    depends_on("py-fiona@1.8.22:<1.9.0", when="^python@:3.10")
+    depends_on("py-fiona@1.8.22:1.8", when="^python@3.11")
+    depends_on("py-fiona@1.8.22:1.8", when="^python@:3.10")
 
     depends_on("py-matplotlib@3.9.2:", when="^python@3.13:")
     depends_on("py-matplotlib@3.8.2:", when="^python@:3.12")
@@ -129,7 +130,7 @@ class PyGeowatch(PythonPackage):
     depends_on("py-pint@0.23:", when="^python@:3.12")
 
     depends_on("py-lxml@5.3.0:", when="^python@3.11:")
-    depends_on("py-lxml@4.6.3:", when="^python@:3.10:")
+    depends_on("py-lxml@4.6.3:", when="^python@:3.10")
 
     depends_on("py-pystac_client@0.5.1:")
 
@@ -223,7 +224,6 @@ class PyGeowatch(PythonPackage):
     #   cmd_queue >= 0.1.20
     #   pytorch_msssim==0.1.5
 
-    #   kwimage_ext >= 0.2.1; platform_system=="Linux" and python_version < '3.12'    
 
     #   torch_optimizer>=0.1.0
     #   torch_liberator>=0.2.1
@@ -243,6 +243,7 @@ class PyGeowatch(PythonPackage):
     #   # Imaging
     depends_on("py-distinctipy@1.2.1:")
     depends_on("py-kwimage@0.11.2:")
+    depends_on("py-kwimage_ext@0.2.1:")
     depends_on("py-kwcoco@0.8.5:")
     #   kwcoco_dataloader>=0.1.1
     #   delayed_image>=0.4.5

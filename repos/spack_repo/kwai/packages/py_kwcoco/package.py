@@ -73,7 +73,7 @@ class PyKwcoco(PythonPackage):
     depends_on("py-pandas@2.2.3:", when="^python@3.13:")
     depends_on("py-pandas@2.1.1:", when="^python@3.12")
     depends_on("py-pandas@1.5.0:", when="^python@3.11")
-    depends_on("py-pandas@1.4.2:", when="^python@3.8:3.10:")
+    depends_on("py-pandas@1.4.2:", when="^python@3.8:3.10")
 
     depends_on("py-scikit-learn@1.1.3:", when="^python@3.11")
     depends_on("py-scikit-learn@1.1.0:", when="^python@3.10")
