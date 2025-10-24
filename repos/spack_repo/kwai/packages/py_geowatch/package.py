@@ -209,6 +209,7 @@ class PyGeowatch(PythonPackage):
     depends_on("py-s3fs@2023.6.0:")
 
     depends_on("py-transformers@4.37.2:")
+    depends_on("py-ubelt@1.3.6:")
 
     # Missing in spack
     # vvvvvvvvvvvvvvvv
@@ -240,9 +241,9 @@ class PyGeowatch(PythonPackage):
     #   lark_cython >= 0.0.16
 
     #   # Imaging
-    #   distinctipy>=1.2.1
-    #   kwimage>=0.11.2
-    #   kwcoco>=0.8.5
+    depends_on("py-distinctipy@1.2.1:")
+    depends_on("py-kwimage@0.11.2:")
+    depends_on("py-kwcoco@0.8.5:")
     #   kwcoco_dataloader>=0.1.1
     #   delayed_image>=0.4.5
 
@@ -255,10 +256,9 @@ class PyGeowatch(PythonPackage):
     #   tempenv>=0.2.0
     #   scriptconfig>=0.8.2
     #   girder_client>=3.1.15
-    #  ubelt>=1.3.6
     #  kwutil>=0.3.4
     #  simple_dvc>=0.2.1
-    #  kwarray>=0.6.19
+    depends_on("py-kwarray@0.6.19:")
     #  # xdev availpkg mgrs
     #  mgrs>=1.4.6     ; python_version < '4.0'  and python_version >= '3.12'    # Python 3.12+
     #  mgrs>=1.4.6     ; python_version < '3.12' and python_version >= '3.11'    # Python 3.11
