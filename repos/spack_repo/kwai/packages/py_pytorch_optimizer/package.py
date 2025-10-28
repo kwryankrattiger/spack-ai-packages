@@ -28,4 +28,4 @@ class PyPytorchOptimizer(PythonPackage):
     depends_on("py-poetry-core@2.0.0:", type="build")
 
     depends_on("python@3.8:")
-    depends_on("py-torch@1.10:", when="python")
+    depends_on("py-torch@1.10:")
