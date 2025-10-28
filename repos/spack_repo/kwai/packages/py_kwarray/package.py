@@ -27,6 +27,8 @@ class PyKwarray(PythonPackage):
 
     version("0.7.1", md5="109be1584c02ad339ae7a80c7666e9a7")
 
+    depends_on("py-setuptools@41.0.1:", type=("build"))
+
     depends_on("py-ubelt@1.2.3:")
 
     depends_on("py-numpy@2.1.0:", when="^python@3.13:")

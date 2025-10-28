@@ -17,15 +17,18 @@ class PyKwimage(PythonPackage):
     """
 
     homepage = "https://kwimage.readthedocs.io/"
-    url = "https://github.com/Kitware/kwimage"
+    git = "https://github.com/Kitware/kwimage"
+    pypi = "kwimage/kwimage-0.11.6.tar.gz"
 
     maintainers("kwryankrattiger")
 
     license("Apache-2.0", checked_by="kwryankrattiger")
 
-    version("0.11.6", md5="0123456789abcdef0123456789abcdef")
+    version("0.11.6", md5="dad64ab9a951150defffb724994f15ee")
 
     depends_on("python@3.8:")
+
+    depends_on("py-setuptools@41.0.1:", type=("build"))
 
     depends_on("py-scipy@1.14.1:", when="^python@3.13:")
     depends_on("py-scipy@1.11.2:", when="^python@3.12")
