@@ -17,7 +17,7 @@ class PyKwplot(PythonPackage):
     visualizing algorithm results.
 `   """
 
-    homepage = "https://ubelt.readthedocs.io/en/latest"
+    homepage = "https://gitlab.kitware.com/computer-vision/kwplot"
     git = "https://gitlab.kitware.com/computer-vision/kwplot"
     pypi = "kwplot/kwplot-0.3.8.tar.gz"
 

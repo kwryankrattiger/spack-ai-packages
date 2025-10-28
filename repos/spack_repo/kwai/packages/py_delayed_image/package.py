@@ -18,7 +18,6 @@ class PyDelayedImage(PythonPackage):
     """
 
     homepage = "https://gitlab.kitware.com/computer-vision/delayed_image"
-
     git = "https://gitlab.kitware.com/computer-vision/delayed_image"
     pypi = "delayed-image/delayed_image-0.4.6.tar.gz"
 
