@@ -27,6 +27,8 @@ class PyDistinctipy(PythonPackage):
 
     version("1.3.4", md5="f5bf5cd679cfb88e510b233774bce2ee")
 
+    depends_on("py-setuptools@61:", type=("build"))
+
     depends_on("py-numpy@1.16.3:")
     depends_on("py-pandas@0.24.2:")
     depends_on("py-matplotlib@3.1.0:")
