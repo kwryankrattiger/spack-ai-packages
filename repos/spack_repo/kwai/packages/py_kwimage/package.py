@@ -68,4 +68,4 @@ class PyKwimage(PythonPackage):
     depends_on("py-parse@1.14.0:")
     depends_on("py-affine@2.3.0:")
 
-    depends_on("py-lazy_loader@0.4:")
+    depends_on("py-lazy-loader@0.4:")
