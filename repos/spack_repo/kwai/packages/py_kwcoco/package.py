@@ -41,9 +41,9 @@ class PyKwcoco(PythonPackage):
 
     license("Apache-2.0", checked_by="kwryankrattiger")
 
-    version("0.8.8", md5="")
+    version("0.8.8", md5="4c13b763d15c8f7cfc90038562b24bb3")
 
-    depends_on("py-delayed_image@0.4.2:")
+    depends_on("py-delayed-image@0.4.2:")
     depends_on("py-jsonschema@3.2.0:")
     depends_on("py-kwarray@0.6.19:")
     depends_on("py-kwimage@0.11.1:")
@@ -75,7 +75,7 @@ class PyKwcoco(PythonPackage):
     depends_on("py-pandas@1.5.0:", when="^python@3.11")
     depends_on("py-pandas@1.4.2:", when="^python@3.8:3.10")
 
-    depends_on("py-scikit-learn@1.1.3:", when="^python@3.11")
+    depends_on("py-scikit-learn@1.1.3:", when="^python@3.11:")
     depends_on("py-scikit-learn@1.1.0:", when="^python@3.10")
     depends_on("py-scikit-learn@1.0.2:", when="^python@3.8:3.9")
 
