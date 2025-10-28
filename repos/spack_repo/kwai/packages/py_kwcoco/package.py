@@ -34,8 +34,8 @@ class PyKwcoco(PythonPackage):
     reading, writing, modifying, and interacting with computer vision datasets
     """
 
-    url = "https://github.com/Kitware/kwcoco"
-    pypi = "kwcoco/kwcoco-1.1.0.tar.gz"
+    git = "https://github.com/Kitware/kwcoco"
+    pypi = "kwcoco/kwcoco-0.8.8.tar.gz"
 
     maintainers("kwryankrattiger")
 
