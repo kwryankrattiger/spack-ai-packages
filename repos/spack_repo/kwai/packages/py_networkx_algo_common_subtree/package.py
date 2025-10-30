@@ -26,4 +26,9 @@ class PyNetworkxAlgoCommonSubtree(PythonPackage):
     version("0.2.2", sha256="d5ed0eb21c7c59f25cf0f7a34e8aab6599afb4d8d31be8e2cbbeec10e5ed11b8")
 
     depends_on("py-setuptools", type="build")
-    depends_on("py-networkx@2.7:")
+    depends_on("py-networkx@2.7:", when="python@3.11:4.0")
+    depends_on("py-networkx@2.7:", when="python@3.10:3.11")
+    depends_on("py-networkx@2.7:3.0", when="python@3.9:3.10")
+    depends_on("py-networkx@2.7:3.0", when="python@3.8:3.9")
+    depends_on("py-networkx@2.6.2:3.0", when="python@3.7:3.8")
+    depends_on("py-networkx@2.5.1:3.0", when="python@3.6:3.7")
