@@ -237,7 +237,9 @@ class PyGeowatch(PythonPackage):
     depends_on("py-delayed-image@0.4.5:")
     depends_on("py-ndsampler@0.8.0:")
 
-    depends_on("py-albumentations@1.0.0")
+    # Verify that using a newer version is fine
+    depends_on("py-albumentations@1.0.0:")
+    # depends_on("py-albumentations@1.0.0")
 
     depends_on("py-progiter@2.0.0:")
     depends_on("py-fire@0.4.0:")
