@@ -222,7 +222,7 @@ class PyGeowatch(PythonPackage):
     depends_on("py-pytorch-msssim@0.1.5")
 
     depends_on("py-pytorch-optimizer@0.1.0:")
-    depends_on("py-pytorch-liberator@0.2.1:")
+    depends_on("py-torch-liberator@0.2.1:")
     depends_on("py-utm@0.7.0:")
 
     # GIS
