@@ -31,7 +31,7 @@ class PyNdsampler(PythonPackage):
     depends_on("py-networkx@2.8:")
     depends_on("py-ubelt @ 1.3.6:")
     depends_on("py-parse @ 1.19.0:")
-    depends_on("py-xarray@2023.10.0", when="^python@3.13:")
+    depends_on("py-xarray@2023.10.0:", when="^python@3.13:")
     depends_on("py-xarray@0.17.0:")
     depends_on("py-numpy@2.1.0:", when="^python@3.13:")
     depends_on("py-numpy@1.26.0:", when="^python@3.12")
