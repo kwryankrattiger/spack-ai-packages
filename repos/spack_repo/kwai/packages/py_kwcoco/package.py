@@ -26,6 +26,7 @@ class PyKwcoco(PythonPackage):
 
     version("0.8.8", md5="4c13b763d15c8f7cfc90038562b24bb3")
 
+    depends_on("py-setuptools@41.0.1:", type="build")
     depends_on("py-delayed-image@0.4.2:")
     depends_on("py-jsonschema@3.2.0:")
     depends_on("py-kwarray@0.6.19:")
